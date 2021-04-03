@@ -3,16 +3,49 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
 
         <title>CSS</title>   
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="colors.js"></script>
     </head>
 
     <body>
+        <input id="toggle" type="button" value="night" onclick="nightDayHandler(this)">
         <h1><a href="index.html">CSS</a></h1>
-        <ol>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
-        </ol>
+
+        <div id=grid>
+            <ol>
+                <li><a href="1.html">HTML</a></li>
+                <li><a href="2.html">CSS</a></li>
+                <li><a href="3.html">JavaScript</a></li>
+            </ol>
+        
+
+            <div id=article>
+                <h2>CSS</h2>
+                Default value:	left if direction is ltr, and right if direction is rtl
+                Inherited:	yes
+                Animatable:	no. Read about animatable
+                Version:	CSS1
+                JavaScript syntax:	object.style.textAlign="right"
+                Browser Support
+                The numbers in the table specify the first browser version that fully supports the property.
+
+                Property					
+                text-align	1.0	3.0	1.0	1.0	3.5
+                CSS Syntax
+                text-align: left|right|center|justify|initial|inherit;
+                Property Values
+                Value	Description	Play it
+                left	Aligns the text to the left	
+                right	Aligns the text to the right	
+                center	Centers the text	
+                justify	Stretches the lines so that each line has equal width (like in newspapers and magazines)	
+                initial	Sets this property to its default value. Read about initial	
+                inherit	Inherits this property from its parent element. Read ab
+            </div>
+        </div>
     </body>
 </html>
